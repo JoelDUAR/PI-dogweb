@@ -1,0 +1,71 @@
+.container, .containerInfo{
+  display: flex;  
+  align-items: center;
+}
+
+.container{
+    width: 100vw;
+    height: 6vh;
+    background-color: #f6c450;
+    justify-content: space-between;
+}
+
+.containerInfo{
+    width: 70vw;
+    justify-content: space-around;
+}
+
+.info{
+    color: rgb(209, 42, 0);
+    font-family: "letters";
+    font-size: 26px;
+}
+
+.containerIcons{
+    width: 30vw;
+}
+
+
+.Img{
+    width: 2vw;
+    height: 4vh;
+    margin: auto 1vw;
+    transition: all 0.2s;
+}
+
+.Img:hover{
+    width: 3vw;
+    height: 5vh;
+    margin: auto 1vw;
+}
+
+.Img:active{
+    width: 1.5vw;
+    height: 3vh;
+    margin: auto 1vw;
+}
+
+@media only screen and (max-width: 1900px){
+
+    
+.container{
+    height: 14vh;
+}
+
+.Img{
+    width: 3vw;
+    height: 6vh;
+}
+
+.Img:hover{
+    width: 4vw;
+    height: 8vh;
+}
+
+.Img:active{
+    width: 2vw;
+    height: 4vh;
+
+}
+    
+}

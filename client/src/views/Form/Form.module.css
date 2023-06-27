@@ -1,0 +1,190 @@
+.container, .form, .divInput{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    align-items: flex-end;
+    background-image: url("../../assets/image/Form.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .form{
+    width: 40vw;
+    height: 100vh;
+    align-items: center;
+  
+  }
+
+  .title{
+    font-family: "Project";
+    font-size: 60px;
+    color: #cc2b2b;
+    text-decoration: underline;
+  }
+
+  .divInput{
+    width: 100%;
+    align-items: center;
+    margin: 1.2vh auto;
+   
+  }
+
+  .containerDiv{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .input{
+    width: 50%;
+    height: 3vh;
+    border-radius: 5px;
+    margin-left: 1vw;
+    margin-right: 0.2vw;
+    font-family: "letters";
+    font-size: 18px;
+    letter-spacing:0.5px
+  }
+
+  .imageInput{
+    width: 2vw;
+    height: 4vh;
+  }
+
+  .spanError{
+    color: red;
+    font-weight: bold;
+  }
+
+  .containerTemperaments{
+    width:15vw;
+    height:44vh;
+    position: absolute;
+    z-index: 100;
+    top: 27vh;
+    left: 46vw;
+    color: #cc2b2b;
+  }
+
+  .containerTemperamentsNone{
+    display: none;
+  }
+
+  .temperamentSalected{
+    width: 8vw;
+    height: 3vh;
+    border-radius: 10px;
+    margin-left: 0.3vw;
+    font-family: "letters";
+    font-size: 18px;
+  }
+
+  .imgRender{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px 20px 0 0 ;
+  }
+
+  .titleTemperament{
+    text-decoration: underline;
+  }
+
+  .temperaments{
+    width: 100%;
+  }
+
+  .containerButtons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .imgDog{
+    width: 14vw;
+    height: 22vh;
+    position: absolute;
+    z-index: 99;
+    top: 56vh;
+    left: 46vw;
+    border-radius: 20%;
+    border-style: inset;
+  }
+
+.button{
+  background: #cc2b2b;;
+  width: 7vw;
+  height: 7vh;
+  margin: 1.5em;
+  color: rgb(247, 161, 161);
+  position: relative;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 80%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-family: "letters";
+ font-size: 25px;
+ font-weight: bold;
+}
+.button:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: 10px;
+  background: #ffffffd0;;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.3s;
+}
+
+.button:hover:before {
+  width: 100%;
+}
+
+.button:last-child{
+  background-color: yellow;
+}
+
+.button:last-child{
+  background-color: #cc2b2b;
+}
+
+.errorMessage{
+  font-family: "Project";
+  font-size: 40px;
+  font-weight:900
+}
+
+@media only screen and (max-width: 1900px){
+
+  .container {
+    height: 130vh;
+  }
+
+  .form{
+    width: 40vw;
+    height: 100vh;
+    margin-right: 5vw;;
+  }
+
+  .containerTemperaments{
+    top: 47vh;
+  }
+
+  .temperamentSalected{
+    width: 10vw;
+    height: 4vh;
+  }
+
+
+}

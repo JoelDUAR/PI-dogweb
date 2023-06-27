@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'Project';
+    src: url('../../assets/fonts/bangers.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'letters';
+    src: url('../../assets/fonts/simple.otf') format('truetype');
+    font-style: italic;
+    font-weight: bold;
+  }
+
+.divContenedor{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/image/Detail.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box, containerCardDetail{
+    margin-right: 4vw;
+}
+
+.box{
+    position: relative;
+    width: 20vw;
+    height: 80vh;
+    background: #28292d;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.box::before{
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 20vw;
+    height: 80vh;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #cc2b2b, #cc2b2b);
+    animation: animate 6s linear infinite;
+}
+
+.box::after{
+    content: '';
+    z-index: 1;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 20vw;
+    height: 80vh;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #cc2b2b, #cc2b2b);
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+ 
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+} 
+
+.containerCardDetail{
+    position: absolute;
+    inset: 8px;
+    z-index: 2;
+    background: #28292d;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.divContenedorImg{
+    height: 30vh;
+   
+}
+
+.imageCard{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.divContenedorInfo{
+    height: 40vh;
+}
+
+.infoCard, .nameCard{
+    color: white;
+}
+.infoCard{
+    font-family: "letters";
+    font-size: 20px;
+} 
+
+.nameCard{
+    font-family: "Project";
+    letter-spacing: 3px;
+    color: white;
+}
+
+.containerButtos{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.containerFormUpdate{
+    border-bottom: 1px solid #000;
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    z-index: 10;
+    top: 10vh;
+    left: 3vw;
+}
+
+@media only screen and (max-width: 1900px){
+
+    .box, containerCardDetail{
+        margin-right: 2vw;
+    }
+    
+    .box{
+        width: 29vw;
+        height: 98vh;
+    }
+    
+    .box::before{
+        width: 29vw;
+        height: 98vh;
+    }
+    
+    .box::after{
+        width: 29vw;
+        height: 98vh;
+    }
+     
+    @keyframes animate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg)
+        }
+    } 
+
+    .divContenedorInfo{
+        height: 54vh;
+    }
+
+      .nameCard{
+         font-size: 22px;
+    }
+    .infoCard{
+        font-family: "letters";
+        font-size: 17px;
+    } 
+  
+  }

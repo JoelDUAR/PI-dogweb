@@ -1,0 +1,13 @@
+export const GET_TEMPERAMENTS = "GET_TEMPERAMENTS";
+export const POST_DOG = "POST_DOG"; 
+export const GET_DOGS = "GET_DOGS";
+export const GET_DETAIL_DOG = "GET_DETAIL_DOG";
+export const GET_NAME_DOG = "GET_NAME_DOG";
+export const PUT_DOG = "PUT_DOG";
+export const DELETE_DOG = "DELETE_DOG";
+export const CLEAN_DOG = "CLEAN_DOG";
+export const CLEAN_CARD_DETAIL = "CLEAN_CARD_DETAIL";
+export const FILTER_TEMPERAMENTS = "FILTER_TEMPERAMENTS";
+export const FILTER_CREATED = "FILTER_CREATED";
+export const ORDER_NAME = "ORDER_NAME";
+export const ORDER_WEIGHT = "ORDER_WEIGHT";

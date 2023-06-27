@@ -1,0 +1,73 @@
+.btnCheckbox{
+    display: none;
+}
+
+.container{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.ContainerIconsviews{
+    width: 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon, .iconAdd, .iconReload{
+    display: inline-block;
+    text-decoration: none;
+    background: #cc2b2b;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+    cursor: pointer;
+    border: none;
+}
+
+.imgIcon, .imgIconExit{
+    width: 1.5vw;
+    height: 3vh;
+    
+}
+
+.icon:hover, .iconAdd:hover, .iconReload:hover{
+    background: #fff;
+    width: 60px;
+    height:60px
+}
+
+.imgIconExit{
+    width: 2vw;
+    height: 4vh;
+}
+
+.icon:active, .iconAdd:active, .iconReload:active{
+    width: 48px;
+    height:48px
+}
+
+.iconReload{
+    top: 10vw;
+    left: 10vw;
+}
+
+@media only screen and (max-width: 1900px){
+
+    .container{
+        left: 0px;
+        z-index: 1;
+    }
+    
+    .ContainerIconsviews{
+        width: 13vw;
+    }
+    
+  
+}
+
+
+
+

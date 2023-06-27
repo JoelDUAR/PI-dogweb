@@ -1,0 +1,74 @@
+.containerCard{
+width: 16vw;
+height: 46vh;
+margin: 1vh 2vw;
+border-radius: 20px 0 20px;
+box-shadow: 0px 0px 40px 12px rgba(0, 0, 0, 0.413);
+text-decoration: none;
+background: #cc2b2b9c;
+backdrop-filter: blur(4px) saturate(1000%);transition: all 0.2s;
+margin-bottom: 1vh;
+}
+
+.containerCard:hover{
+    width: 17vw;
+    height: 47vh;
+}
+
+.containerCard:active{
+    width: 14vw;
+    height: 44vh;
+}
+
+.imageCard{
+    width: 100%;
+    height: 45%;
+    border-radius: 20px 0 0 0;
+}
+
+.name{
+    font-family: "Project";
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.pCard{
+    display: block;
+    flex-direction: column;
+    text-decoration: none;
+    color: #fff;
+    font-family: "letters";
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 1900px){
+
+    .containerCard{
+        width: 18vw;
+        height: 62vh;
+        }
+
+        .containerCard:hover{
+            width: 19vw;
+            height: 64vh;
+        }
+        
+        .containerCard:active{
+            width: 16vw;
+            height: 60vh;
+        }
+
+        .name{
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        
+        .pCard{
+            font-size: 14px;
+        }
+    
+  
+}

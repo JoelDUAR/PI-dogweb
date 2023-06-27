@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Project';
+    src: url('../../assets/fonts/bangers.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'letters';
+    src: url('../../assets/fonts/simple.otf') format('truetype');
+    font-style: italic;
+    font-weight: bold;
+  }

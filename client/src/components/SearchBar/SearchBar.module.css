@@ -1,0 +1,61 @@
+.containerSearchBar{
+    position: absolute;
+    display:flex;
+    align-items: center;
+    border-radius: 60px;
+    padding:10px 10px;
+    width: 15vw;
+    top: 2vh;
+    left: 12vw;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px) saturate(180%);
+    border: 1.5px solid #000;
+    box-shadow: 0px 0px 40px 12px rgba(0, 0, 0, 0.413);
+    text-decoration: none;
+}
+
+.inputSearchBar{
+    width: 10vw;
+    background:  transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+
+}
+
+.imageSearchBar{
+    width: 25px;
+}
+
+.buttonSearchBar{
+    border: none;
+    border-radius:50%;
+    width: 50px;
+    height: 50px;
+    background: #58629b;
+    cursor: pointer;
+    transition: all 0.3s
+}
+
+.buttonSearchBar:hover{
+    width: 65px;
+    height: 65px;
+}
+
+.buttonSearchBar:active{
+    width: 40px;
+    height: 40px;
+}
+
+@media only screen and (max-width: 1900px){
+
+    .containerSearchBar{
+        padding:8px 8px;
+        width: 16vw;
+        top: 4vh;
+        left: 16vw;
+    }
+    
+  
+}
